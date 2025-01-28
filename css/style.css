@@ -1,0 +1,107 @@
+.navbar-brand{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+    color: #fff;
+}
+.custom-nav .custom-nav-item a{
+    color:#fff ;
+}
+.custom-nav-item:hover{
+    background-color: rgb(205, 113, 56);
+    border:solid  rgb(205, 113, 56) 1px;
+    border-radius: 10px;
+}
+.special-letter{
+    color:red;
+    font-style: italic;
+}
+.custom-nav {
+    padding: 10px;
+}
+.custom-nav-item {
+    /* Add space between navbar items */
+    margin-right: 10px;
+}
+
+.ml-auto {
+    /* Moves the navbar items to the right side */
+    margin-left: auto ;
+    
+}
+/*video*/
+.vid-parent{
+    position:relative;
+    padding: 0;
+    margin: 0;
+
+}
+video{
+    width:100%;
+    height:100%;
+    padding: 0;
+    margin: 0;
+}
+.vid-overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background-color: #1d5a7d;
+    z-index:1;
+    opacity:0.8;
+}
+.vid-content{
+    position:absolute;
+    z-index:2;
+    top:35%;
+    left:35%;
+    text-align: center;
+    color:#fff;
+}
+
+/* Style for the modal container */
+.modal-container {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Style for the modal content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 5px;
+}
+
+
+
+@media screen and (min-width:0px) and (max-width:700px){
+    .my-content{
+        display:none;
+    }
+
+    .vid-content{
+        top:12%;
+        left:60%;
+    }
+    .custom-nav .custom-nav-item a{
+        padding: 10px 20px;
+        background-color: #1d5a7d;
+    }
+    .custom-nav-item:hover{
+        background-color: none;
+        border: none;
+        border-radius: none;
+    }
+}
